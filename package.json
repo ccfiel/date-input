@@ -4,12 +4,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skarahoda/inquirer-toggle.git"
+    "url": "git+https://github.com/ccfiel/date-input.git"
   },
   "author": {
-    "name": "Sertac Karahoda",
-    "email": "sertackarahoda@gmail.com",
-    "url": "https://github.com/skarahoda"
+    "name": "Chris Ian Fiel",
+    "email": "ccfiel@gmail.com",
+    "url": "https://github.com/ccfiel/date-input"
   },
   "files": [
     "dist/*"
@@ -25,6 +25,9 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@inquirer/core": "^8.0.1"
+    "@inquirer/core": "^8.2.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ccfiel"
   }
 }

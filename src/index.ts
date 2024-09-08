@@ -2,7 +2,7 @@ import { type KeypressEvent, isDownKey, isUpKey, type Theme, useKeypress, useSta
 import { createPrompt, usePrefix, makeTheme } from "@inquirer/core";
 import ansiEscapes from "ansi-escapes";
 
-type InquirerToggleConfig = {
+type DateInputConfig = {
     message: string;
     default?: boolean;
     theme?: {
@@ -29,7 +29,7 @@ function isRightKey(
     return key.name === "right";
 }
 
-export default createPrompt<boolean, InquirerToggleConfig>(
+export default createPrompt<boolean, DateInputConfig>(
     (config, done) => {
         const theme = makeTheme({ active: "yes", inactive: "no" }, config.theme);
         const prefix = usePrefix({ theme });
